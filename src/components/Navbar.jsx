@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#A9907E] text-white">
       <div>
-        <img src={Logo} alt="logo image" style={{ width: "50px" }} />
+        <img src={Logo} alt="logo image" style={{ width: "35px" }} />
       </div>
 
       {/* menu */}
@@ -56,11 +56,8 @@ const Navbar = () => {
       {/* mobile menu */}
       <div
         className={
-          !nav
-            ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#A9907E] flex flex-col justify-center items-center"
-        }
-      >
+          !nav? "hidden" : "absolute top-0 left-0 w-full h-screen bg-[#A9907E] flex flex-col justify-center items-center"
+        }>
         <ul>
           <li className="py-6 text-4xl">
             <Link onClick={handleClick} to="home" smooth={true} duration={500}>
@@ -126,7 +123,7 @@ const Navbar = () => {
         </ul>
         <ul>
           {/* Email */}
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-red-500">
             <a
               className="flex justify-between items-center w-full text-white"
               href="mailto:farhanalwahid10@gmail.com"
@@ -139,7 +136,7 @@ const Navbar = () => {
           {/* Resume */}
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
             <a
-              className="flex justify-between items-center w-full text-gray-300"
+              className="flex justify-between items-center w-full text-white"
               href={Resume}
             >
               Resume <BsFillPersonLinesFill size={30} />

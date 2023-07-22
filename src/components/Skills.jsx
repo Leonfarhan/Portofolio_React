@@ -4,6 +4,10 @@ import JavaScript from "../assets/javascript.png";
 import ReactImg from "../assets/react.png";
 import GitHub from "../assets/github.png";
 import Tailwind from "../assets/tailwind.png";
+import Kotlin from '../assets/kotlin.png';
+import AndroidStudio from '../assets/android-studio.png';
+import Bootstrap from '../assets/bootstrap.png';
+import Mysql from '../assets/mysql.png';
 
 const Skills = () => {
   return (
@@ -54,6 +58,30 @@ const Skills = () => {
           <div className="hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={Tailwind} alt="Tailwind icon" />
             <p className="my-4">TAILWIND</p>
+          </div>
+
+          {/* kotlin  */}
+          <div className="hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={Kotlin} alt="Kotlin icon" />
+            <p className="my-4">KOTLIN</p>
+          </div>
+
+          {/* android studio  */}
+          <div className="hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={AndroidStudio} alt="Android Studio icon" />
+            <p className="my-4">ANDROID STUDIO</p>
+          </div>
+
+          {/* bootstrap  */}
+          <div className="hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={Bootstrap} alt="Bootstrap icon" />
+            <p className="my-4">BOOTSTRAP</p>
+          </div>
+
+          {/* android studio  */}
+          <div className="hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={Mysql} alt="Mysql icon" />
+            <p className="my-4">MYSQL</p>
           </div>
         </div>
       </div>

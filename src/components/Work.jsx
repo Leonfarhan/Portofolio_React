@@ -11,7 +11,7 @@ const Work = () => {
           <p className="text-4xl font-bold inline border-b-4 text-black border-white">
             Work
           </p>
-          <p className="py-6">cek disini coba deh</p>
+          <p className="py-6">Here are some of the projects that are being done or have been done.</p>
         </div>
 
         {/* container */}
@@ -27,7 +27,7 @@ const Work = () => {
                 React JS Application
               </span>
 
-              <div>
+              <div className="flex justify-center">
                 <a href="/">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Demo
@@ -53,7 +53,7 @@ const Work = () => {
                 React JS Application
               </span>
 
-              <div>
+              <div className='flex justify-center'>
                 <a href="/">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Demo
