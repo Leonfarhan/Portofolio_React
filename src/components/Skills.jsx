@@ -8,6 +8,11 @@ import Kotlin from '../assets/kotlin.png';
 import AndroidStudio from '../assets/android-studio.png';
 import Bootstrap from '../assets/bootstrap.png';
 import Mysql from '../assets/mysql.png';
+import Pyhton from '../assets/python.png';
+import Fastapi from '../assets/fastapi.png';
+import Linux from '../assets/linux.png';
+import MongoDB from '../assets/mongodb.png';
+import Nginx from '../assets/nginx.png';
 
 const Skills = () => {
   return (
@@ -78,11 +83,42 @@ const Skills = () => {
             <p className="my-4">BOOTSTRAP</p>
           </div>
 
-          {/* android studio  */}
+          {/* My SQL  */}
           <div className="hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={Mysql} alt="Mysql icon" />
             <p className="my-4">MYSQL</p>
           </div>
+
+          {/* Python  */}
+          <div className="hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={Pyhton} alt="Pyhton icon" />
+            <p className="my-4">PYTHON</p>
+          </div>
+
+          {/* Linux  */}
+          <div className="hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={Linux} alt="Linux icon" />
+            <p className="my-4">LINUX</p>
+          </div>
+          
+          {/* MongoDB  */}
+          <div className="hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={MongoDB} alt="MongoDB icon" />
+            <p className="my-4">MONGODB</p>
+          </div>
+          
+          {/* Nginx  */}
+          <div className="hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={Nginx} alt="Nginx icon" />
+            <p className="my-4">NGINX</p>
+          </div>
+          
+          {/* Fastapi  */}
+          <div className="hover:scale-110 duration-500">
+            <img className="w-screen mx-auto" src={Fastapi} alt="Fastapi icon" />
+            <p className="my-4">FASTAPI</p>
+          </div>
+
         </div>
       </div>
     </div>

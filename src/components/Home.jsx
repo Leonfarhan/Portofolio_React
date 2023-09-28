@@ -1,7 +1,40 @@
+import { useState, useEffect } from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-scroll";
 
 const Home = () => {
+  const [typedText, setTypedText] = useState("");
+  const fullText = "I'm Front-End & Mobile Developer.";
+  const typingSpeed = 200; // ms
+  const cursorBlinkSpeed = 500; // ms
+
+  useEffect(() => {
+    let currentText = "";
+    let currentIndex = 0;
+
+    const typeText = () => {
+      if (currentIndex < fullText.length) {
+        currentText += fullText[currentIndex];
+        setTypedText(currentText);
+        currentIndex++;
+        setTimeout(typeText, typingSpeed);
+      } else {
+        const cursorElement = document.getElementById("cursor");
+        if (cursorElement) {
+          cursorElement.style.visibility =
+            cursorElement.style.visibility === "visible" ? "hidden" : "visible";
+        }
+      }
+    };
+
+    const cursorInterval = setInterval(typeText, cursorBlinkSpeed);
+
+    // Clear the interval when the component unmounts
+    return () => {
+      clearInterval(cursorInterval);
+    };
+  }, []);
+
   return (
     <div name="home" className="w-full h-screen bg-[#A9907E]">
       {/* Container */}
@@ -11,7 +44,10 @@ const Home = () => {
           Farhan Alwahid
         </h1>
         <h2 className="text-4xl pl-2 sm:text-7xl font-bold text-white">
-          I&apos;m Front-End & Mobile Developer.
+          {typedText}
+          <span id="cursor" className="visible">
+            |
+          </span>
         </h2>
         <p className="text-[#333333] py-4 max-w-[700px]">
           I am a Front-End & Mobile developer with a focus on building
