@@ -5,7 +5,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { Link } from "react-scroll";
 
 import Logo from "../assets/logo.png";
-import Resume from "../assets/resume.pdf";
+import CV from "../assets/cv.pdf";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -101,7 +101,7 @@ const Navbar = () => {
       <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
         <ul>
           {/* LinkedIn */}
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
+          <li className="w-[160px] h-[60px] flex justify-between rounded-tr-full rounded-br-full items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
             <a
               className="flex justify-between items-center w-full text-white"
               href="https://www.linkedin.com/in/farhan-alwahid-17a379153?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2Bs1vFGI8RUmvF0ZBcNF16w%3D%3D"
@@ -112,7 +112,7 @@ const Navbar = () => {
         </ul>
         <ul>
           {/* Github */}
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
+          <li className="w-[160px] h-[60px] flex justify-between rounded-tr-full rounded-br-full items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
             <a
               className="flex justify-between items-center w-full text-white"
               href="https://github.com/Leonfarhan"
@@ -123,7 +123,7 @@ const Navbar = () => {
         </ul>
         <ul>
           {/* Email */}
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-red-500">
+          <li className="w-[160px] h-[60px] flex justify-between rounded-tr-full rounded-br-full items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-red-500">
             <a
               className="flex justify-between items-center w-full text-white"
               href="mailto:farhanalwahid10@gmail.com"
@@ -133,13 +133,13 @@ const Navbar = () => {
           </li>
         </ul>
         <ul>
-          {/* Resume */}
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
+          {/* CV */}
+          <li className="w-[160px] h-[60px] flex justify-between rounded-tr-full rounded-br-full items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
             <a
               className="flex justify-between items-center w-full text-white"
-              href={Resume}
+              href={CV}
             >
-              Resume <BsFillPersonLinesFill size={30} />
+              CV <BsFillPersonLinesFill size={30} />
             </a>
           </li>
         </ul>

@@ -1,77 +1,57 @@
-import WorkImg from "../assets/projects/workImg.jpeg";
-import RealEstate from "../assets/projects/realestate.jpg";
+import Pupuk from "../assets/projects/pupuk.png";
+import Aljabar from "../assets/projects/aljabar.png";
 
 const Work = () => {
-  // const project = data;
-
   return (
     <div name="work" className="w-full md:h-screen text-white bg-[#A9907E]">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
-        <div className="pb-8">
+        <div>
           <p className="text-4xl font-bold inline border-b-4 text-black border-white">
             Work
           </p>
-          <p className="py-6">Here are some of the projects that are being done or have been done.</p>
+          <p className="py-6">
+            Here are some of the projects that have been done.
+          </p>
         </div>
 
-        {/* container */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+        {/* container 1st */}
+        <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-4 pb-12">
           {/* grid item */}
           <div
-            style={{ backgroundImage: `url(${WorkImg})` }}
+            style={{ backgroundImage: `url(${Pupuk})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
-            {/* hover effect */}
-            <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                React JS Application
-              </span>
-
-              <div className="flex justify-center">
-                <a href="/">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
-                  </button>
-                </a>
-
-                <a href="/">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
           </div>
-
-          <div
-            style={{ backgroundImage: `url(${RealEstate})` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
-            {/* hover effect */}
-            <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                React JS Application
-              </span>
-
-              <div className='flex justify-center'>
-                <a href="/">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
-                  </button>
-                </a>
-
-                <a href="/">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Code
-                  </button>
-                </a>
-              </div>
+          <div>
+            {/* right description */}
+            <div className="text-black text-lg">
+            Design and develop a web application for image recognition and verification of ID cards and fertilizer bags using a machine learning model at PT Pupuk Indonesia
             </div>
           </div>
         </div>
+
+        <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-4">
+          <div>
+            {/* left description */}
+            <div className="text-black text-lg">
+            Comparison of Rotation Matrix and Quaternion in 3D Object Rotation Representation in Three.js Based Web Application
+            </div>
+          </div>
+
+          {/* grid item */}
+          <div
+            style={{ backgroundImage: `url(${Aljabar})` }}
+            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
+          >
+          </div>
+        </div>
+
+        
       </div>
     </div>
   );
 };
 
 export default Work;
+
+

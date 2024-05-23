@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 
 const Home = () => {
   const [typedText, setTypedText] = useState("");
-  const fullText = "I'm Front-End & Mobile Developer.";
+  const fullText = "I'm Front-End Developer.";
   const typingSpeed = 200; // ms
   const cursorBlinkSpeed = 500; // ms
 
@@ -50,7 +50,7 @@ const Home = () => {
           </span>
         </h2>
         <p className="text-[#333333] py-4 max-w-[700px]">
-          I am a Front-End & Mobile developer with a focus on building
+          I am a Front-End Developer with a focus on building
           exceptional digital experiences. I have a passion for crafting
           responsive web and mobile applications that aim to delight users.
           Occasionally, I also dabble in design to enhance the overall appeal of

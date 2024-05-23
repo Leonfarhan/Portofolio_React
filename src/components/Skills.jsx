@@ -4,8 +4,8 @@ import JavaScript from "../assets/javascript.png";
 import ReactImg from "../assets/react.png";
 import GitHub from "../assets/github.png";
 import Tailwind from "../assets/tailwind.png";
-import Kotlin from '../assets/kotlin.png';
-import AndroidStudio from '../assets/android-studio.png';
+// import Kotlin from '../assets/kotlin.png';
+// import AndroidStudio from '../assets/android-studio.png';
 import Bootstrap from '../assets/bootstrap.png';
 import Mysql from '../assets/mysql.png';
 import Pyhton from '../assets/python.png';
@@ -66,16 +66,16 @@ const Skills = () => {
           </div>
 
           {/* kotlin  */}
-          <div className="hover:scale-110 duration-500">
+          {/* <div className="hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={Kotlin} alt="Kotlin icon" />
             <p className="my-4">KOTLIN</p>
-          </div>
+          </div> */}
 
           {/* android studio  */}
-          <div className="hover:scale-110 duration-500">
+          {/* <div className="hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={AndroidStudio} alt="Android Studio icon" />
             <p className="my-4">ANDROID STUDIO</p>
-          </div>
+          </div> */}
 
           {/* bootstrap  */}
           <div className="hover:scale-110 duration-500">
